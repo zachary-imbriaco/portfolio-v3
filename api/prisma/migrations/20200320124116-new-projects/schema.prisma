@@ -1,0 +1,20 @@
+datasource DS {
+  provider = "sqlite"
+  url = "***"
+}
+
+generator photonjs {
+  provider = "prisma-client-js"
+  binaryTargets = env("BINARY_TARGET")
+}
+
+// Define your own datamodels here and run `yarn redwood db save` to create
+// migrations for them.
+// TODO: Please remove the following example:
+model Project {
+  id    Int     @id @default(autoincrement())
+  title String  @unique
+  body  String?
+  website String @default("zachary-imbriaco.github.com")
+  createdAt DateTime @default(now())
+}
