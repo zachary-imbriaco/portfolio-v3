@@ -2,25 +2,25 @@ import {Link, routes} from '@redwoodjs/router'
 
 const NavLayout = ({ children }) => {
   return (
-    <>
+    <div>
       <header>
         <nav>
-          <ul>
+          <ul className="NavList">
             <li>
-              <Link to={routes.home()}>Home</Link>
+              <Link className="NavLinks" to={routes.home()}>Home</Link>
             </li>
             <li>
-              <Link to={routes.about()}>About</Link>
+              <Link className="NavLinks" to={routes.about()}>About</Link>
             </li>
             <li>
-              <Link to={routes.projects()}>Projects</Link>
+              <Link className="NavLinks" to={routes.projects()}>Projects</Link>
             </li>
           </ul>
         </nav>
       </header>
     
       <main>{children}</main>
-    </>
+    </div>
   )
 }
 

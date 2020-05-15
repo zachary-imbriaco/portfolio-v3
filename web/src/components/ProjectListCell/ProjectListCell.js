@@ -16,8 +16,6 @@ export const Empty = () => <div>Empty</div>
 
 export const Failure = ({ error }) => <div>Error: {error.message}</div>
 
-import {Link} from '@redwoodjs/router'
-
 export const Success = ({ projects }) => {
   return projects.map((project) => {
     let link = 'http://www.' + project.website
