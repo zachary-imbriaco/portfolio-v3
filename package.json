@@ -7,7 +7,8 @@
     ]
   },
   "devDependencies": {
-    "@redwoodjs/core": "^0.2.5"
+    "@redwoodjs/core": "^0.2.5",
+    "babel-cli": "^6.26.0"
   },
   "eslintConfig": {
     "extends": "@redwoodjs/eslint-config"
@@ -16,7 +17,5 @@
     "node": ">=12",
     "yarn": ">=1.15"
   },
-  "dependencies": {
-    "babel": "^6.23.0"
-  }
+  "dependencies": {}
 }
