@@ -4,7 +4,9 @@ import ProjectListCell from 'src/components/ProjectListCell'
 const ProjectlistPage = () => {
   return (
     <NavLayout>
-      <ProjectListCell />
+      <div class='projectList'>
+        <ProjectListCell />
+      </div>
     </NavLayout>
   )
 }

@@ -20,7 +20,7 @@ export const Success = ({ projects }) => {
   return projects.map((project) => {
     let link = 'http://www.' + project.website
     return (
-    <>
+    <div class='projects'>
       <header>
         <h2>{project.title}</h2>
       </header>
@@ -30,6 +30,6 @@ export const Success = ({ projects }) => {
       <footer>
         <a href={link}>View this project at {project.website}</a>
       </footer>
-    </>
+    </div>
   )})
 }
