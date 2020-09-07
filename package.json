@@ -18,6 +18,7 @@
     "yarn": ">=1.15"
   },
   "dependencies": {
-    "react": "^16.13.1"
+    "react": "^16.13.1",
+    "redwoodjs": "^1.0.7"
   }
 }
